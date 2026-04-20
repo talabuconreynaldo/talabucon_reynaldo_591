@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:modelhandling/screen/login_screen.dart';
-import 'package:modelhandling/screen/signup_screen.dart';
-import 'package:modelhandling/screen/student_screen_midterm.dart';
+import 'package:modelhandling/screen/chat_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 void main() async{
@@ -22,7 +20,7 @@ class MyApp extends StatelessWidget {
 
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: LoginPage(),
+      home: ChatPage(username: 'Reynaldo'),
     );
   }
 }
